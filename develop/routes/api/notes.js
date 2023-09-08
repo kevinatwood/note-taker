@@ -9,17 +9,6 @@ notes.get('/', (req, res)=>{
     console.info(`${req.method} request received for feedback`);
 })
 
-// notes.post('/', (req, res)=>{
-//     const {title, text} = req.body;
-
-//     if (title && text){
-//         const newNote = {
-//             title,
-//             text,
-//             id: uuid(),
-//         }
-//     }
-// })
 
 notes.post('/', (req, res) => {
     // Log that a POST request was received
