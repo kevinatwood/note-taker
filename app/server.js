@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const api = require('./Develop/routes/index.js');
+const api = require('../Develop/routes/index.js');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
@@ -19,6 +19,7 @@ app.get("/", (req, res)=>{
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, './Develop/db/public/notes.html'))
 );
+
 
 
 
